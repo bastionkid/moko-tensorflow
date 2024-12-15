@@ -7,19 +7,12 @@ buildscript {
         mavenCentral()
         google()
         gradlePluginPortal()
-
-        jcenter {
-            content {
-                includeGroup("org.jetbrains.trove4j")
-            }
-        }
     }
     dependencies {
         classpath(":tensorflow-build-logic")
-        classpath("dev.icerock.moko:resources-generator:0.16.1")
+        classpath("dev.icerock.moko:resources-generator:0.24.4")
     }
 }
-
 
 allprojects {
     plugins.withId("org.gradle.maven-publish") {

@@ -1,14 +1,20 @@
 PODS:
   - MultiPlatformLibrary (0.1.0)
-  - Sketch (3.0)
-  - TensorFlowLiteC (2.2.0)
-  - TensorFlowLiteObjC (2.2.0):
-    - TensorFlowLiteC (= 2.2.0)
+  - Sketch (3.1)
+  - TensorFlowLiteC (2.17.0):
+    - TensorFlowLiteC/Core (= 2.17.0)
+  - TensorFlowLiteC/Core (2.17.0)
+  - TensorFlowLiteObjC (2.17.0):
+    - TensorFlowLiteObjC/Core (= 2.17.0)
+  - TensorFlowLiteObjC/Core (2.17.0):
+    - TensorFlowLiteC (= 2.17.0)
+    - TensorFlowLiteObjC/Privacy (= 2.17.0)
+  - TensorFlowLiteObjC/Privacy (2.17.0)
 
 DEPENDENCIES:
   - MultiPlatformLibrary (from `../mpp-library`)
   - Sketch
-  - TensorFlowLiteObjC (~> 2.2.0)
+  - TensorFlowLiteObjC (~> 2.17.0)
 
 SPEC REPOS:
   trunk:
@@ -21,11 +27,11 @@ EXTERNAL SOURCES:
     :path: "../mpp-library"
 
 SPEC CHECKSUMS:
-  MultiPlatformLibrary: 176fb8ade516666cd47e93de1b71ba0441a541bb
-  Sketch: 49a4b71f7bc77316ed5f75ee79dedaa2b844d5e7
-  TensorFlowLiteC: b3ab9e867b0b71052ca102a32a786555b330b02e
-  TensorFlowLiteObjC: 9adb471254e86ef81aa7d9d0d16743b8d853d95b
+  MultiPlatformLibrary: 0ac41445d3f416448aa02808e2d131c8d6688463
+  Sketch: db5a2d1de16fbf1fbdf57343a89c99b64b33ecf1
+  TensorFlowLiteC: eac6d689a8d391d1b202dc59e3d9165ba64aaf73
+  TensorFlowLiteObjC: 72e1fa903465cd6a8d3d614c1474c5aad7635bb7
 
-PODFILE CHECKSUM: 0bd758d123d6d6a658976b260fce011651596789
+PODFILE CHECKSUM: 3b7695d36c8180b283237ff886911ea983a14a24
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.16.2

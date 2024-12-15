@@ -16,7 +16,6 @@ actual class InterpreterOptions(
     internal val tensorFlowInterpreterOptions = PlatformInterpreterOptions()
         .setNumThreads(numThreads)
         .setAllowBufferHandleOutput(allowBufferHandleOutput)
-        .setAllowFp16PrecisionForFp32(allowFp16PrecisionForFp32)
         .setUseNNAPI(useNNAPI)
         .apply {
             delegates.forEach {

@@ -10,8 +10,9 @@ plugins {
 }
 
 kotlin {
-    ios()
-    android {
+    iosArm64()
+    iosSimulatorArm64()
+    androidTarget {
         publishLibraryVariants("release", "debug")
     }
 }

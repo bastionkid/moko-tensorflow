@@ -4,7 +4,7 @@ source 'https://cdn.cocoapods.org/'
 inhibit_all_warnings!
 
 use_frameworks!
-platform :ios, '11.0'
+platform :ios, '15.6'
 
 # workaround for https://github.com/CocoaPods/CocoaPods/issues/8073
 # need for correct invalidate of cache MultiPlatformLibrary.framework
@@ -14,5 +14,5 @@ target 'tensorflow-test' do
   pod 'MultiPlatformLibrary', :path => '../mpp-library'
 
   pod 'Sketch'
-  pod 'TensorFlowLiteObjC', '~> 2.2.0'
+  pod 'TensorFlowLiteObjC', '~> 2.17.0'
 end

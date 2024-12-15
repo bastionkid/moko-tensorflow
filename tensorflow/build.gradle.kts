@@ -10,7 +10,6 @@ plugins {
 }
 
 dependencies {
-    commonMainImplementation(libs.kotlinStdLib)
     commonMainImplementation(libs.mokoResources)
 
     androidMainImplementation(libs.appCompat)
@@ -21,5 +20,9 @@ cocoaPods {
     podsProject = file("../sample/ios-app/Pods/Pods.xcodeproj")
 
     pod("TensorFlowLiteObjC", module = "TFLTensorFlowLite")
+}
+
+android {
+    namespace = "dev.icerock.moko.tensorflow"
 }
 

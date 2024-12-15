@@ -14,8 +14,9 @@ plugins {
 }
 
 kotlin {
-    android()
-    ios()
+    androidTarget()
+    iosArm64()
+    iosSimulatorArm64()
 }
 
 dependencies {
@@ -27,7 +28,7 @@ dependencies {
 }
 
 multiplatformResources {
-    multiplatformResourcesPackage = "dev.icerock.moko.sample.tensorflowtest"
+    resourcesPackage.set("dev.icerock.moko.sample.tensorflowtest")
 }
 
 cocoaPods {
@@ -48,4 +49,8 @@ kotlin {
                 "TensorFlowLiteC"
             )
         }
+}
+
+android {
+    namespace = "com.icerockdev.library"
 }

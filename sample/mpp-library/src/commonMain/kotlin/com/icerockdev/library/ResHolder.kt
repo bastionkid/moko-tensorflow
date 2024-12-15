@@ -9,6 +9,6 @@ import dev.icerock.moko.sample.tensorflowtest.MR
 
 object ResHolder {
     fun getDigitsClassifierModel(): FileResource {
-        return MR.files.mnist
+        return MR.files.mnist_tflite
     }
 }
